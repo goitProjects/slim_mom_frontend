@@ -1,0 +1,39 @@
+.homeContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.calcForm {
+  padding: 40px 25px 50px 25px;
+}
+
+@media(min-width: 768px){
+  .homeContainer {
+    max-width: 1000px;
+  }
+  .homeContainer {
+    background-image: url(../../assets/images/home_tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 100vh;
+  }
+   .calcForm {
+    padding: 90px 90px 20px 90px;
+   }
+}
+@media(min-width: 1024px){
+  .homeContainer {
+    max-width: 2200px;
+  }
+  .homeContainer{
+    padding: 0 25px;
+    background-image: url(../../assets/images/home_descktop.png);
+    background-size: 750px auto;
+  }
+    .calcForm {
+      padding: 90px 115px 110px 115px;
+      max-width: 1100px;
+     }
+  .homeGroup{
+    width: 70%;
+  }
+}

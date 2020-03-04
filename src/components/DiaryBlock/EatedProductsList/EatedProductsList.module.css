@@ -1,0 +1,41 @@
+.firstBlock {
+  width: 100%;
+  border-spacing: 16px 0px;
+  margin-left: -16px;
+}
+
+.tBodyTable {
+  max-height: 150px;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+@media (min-height:565px) {
+  .tBodyTable{
+    max-height: 300px;
+  }
+}
+
+.fetch_loader {
+  margin-bottom: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+}
+
+.noProducts_p{
+  margin-bottom: 30px;
+}
+

@@ -1,0 +1,304 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 80px;
+  width: 98%;
+}
+
+.container,
+.loggedContainer {
+  display: flex;
+
+  height: 80px;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: #dddddd;
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* padding-top: 4px; */
+  height: 80px;
+}
+
+.logoNavigationBox {
+  height: 80px;
+}
+
+.logoImg {
+  width: 46px;
+  height: 44px;
+}
+
+.logoText {
+  font-size: 21px;
+  letter-spacing: 2px;
+  color: #212121;
+  font-family: "GothamProLight", sans-serif;
+  font-weight: 300;
+  padding-left: 6px;
+}
+
+.logoTextSpan {
+  color: #fc842c;
+  font-family: "GothamProLight", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.usernameBurgerWrapper {
+  height: 80px;
+}
+
+.greyZone,
+.greyZoneModalClose {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddd;
+}
+
+.greyZoneModalClose {
+  justify-content: flex-end;
+}
+
+.closeModal {
+  background: transparent;
+  /* background-image: url("./Logo/closeModal.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+  margin: auto 0;
+  margin-left: 15px;
+  border: none;
+}
+
+.logoutButton {
+  width: 22px;
+  height: 26px;
+  margin-left: 12px;
+}
+
+.burgerBtn {
+  background: transparent;
+  border: none;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin-top: 25px;
+  margin-right: 19px;
+
+}
+
+.burger {
+  width: 24px;
+  height: 26px;
+}
+
+.cross {
+  width: 27px;
+  height: 26px;
+
+  /* ----------- */
+  /* position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  fill: #dddddd; */
+}
+
+.mobileLogoutBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 19px;
+  height: 45px;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .loggedContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid;
+    border-color: #dddddd;
+  }
+
+  .logotype {
+    padding-left: 67px;
+  }
+
+
+  .usernameBurgerWrapper {
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+  }
+
+
+
+  .burgerBtn {
+    /* margin-right: 38px; */
+    transform: translate(-30px, 2px);
+    /* position: absolute; */
+
+
+  }
+
+  .logoutText {
+    display: block;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #212121;
+    font-family: "GothamProBold", sans-serif;
+    font-weight: bold;
+    outline: none;
+  }
+
+  .logoutText:hover {
+    color: #fc842c;
+    text-shadow: 0 1px 1px #ffcca8;
+  }
+
+  .logoutLink {
+    text-decoration: none;
+  }
+
+  .usernamebox {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 8px; */
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #212121;
+    font-family: "GothamProBold", sans-serif;
+    font-weight: bold;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .header {
+    width: 100%;
+    height: 140px;
+
+  }
+
+  .container,
+  .loggedContainer {
+    justify-content: space-between;
+    min-width: 1024px;
+    border: none;
+    height: 140px;
+    /* padding-top: 66px; */
+  }
+
+  .loggedContainer {
+    justify-content: space-between;
+    height: 140px;
+  }
+
+  .logoNavigationBox,
+  .loggedLogoNavigationBox {
+    width: 558px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .usernameText {
+    padding-right: 5px;
+  }
+
+
+
+  .logoutText {
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    padding-left: 5px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #212121;
+    font-family: "GothamProBold", sans-serif;
+    font-weight: bold;
+    outline: none;
+  }
+
+  .loggedLogoNavigationBox {
+    width: 383px;
+    height: 140px;
+  }
+
+  .navigationBox {
+    padding-top: 8px;
+  }
+
+  .navigationBox a {
+    text-decoration: none;
+  }
+
+  .navigationLink {
+    font-family: "GothamProBold";
+    font-weight: bold;
+    color: #999daa;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 46px;
+    transition: .5s;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .navigationLink:focus {
+    color: #2b2b2b;
+  }
+
+  .logotype {
+    padding-left: 0;
+    font-size: 21px;
+  }
+
+  .logoImg {
+    position: relative;
+    left: 83px;
+    top: -24px;
+    width: 66px;
+    height: 63px;
+  }
+
+  .logoText {
+    padding-left: 74px;
+  }
+
+  .usernameBurgerWrapper {
+    width: 219px;
+    height: 140px;
+  }
+
+  .usernamebox {
+    padding-left: 0;
+    padding-top: 5px;
+    justify-content: flex-end;
+  }
+
+  .navigationText {
+    color: #2b2b2b;
+  }
+}

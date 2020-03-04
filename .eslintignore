@@ -1,0 +1,11 @@
+build/
+# src/
+# *.js
+app.js
+index.js
+src/redux/store.js
+src/utils/serviceWorker.js
+src/utils/requests.js
+src/utils/entyPoints.js
+src/redux/reducers/session.js
+src/hoc/ProtectedComponent.jsx

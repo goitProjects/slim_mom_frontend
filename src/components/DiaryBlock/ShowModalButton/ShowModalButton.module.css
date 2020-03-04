@@ -1,0 +1,28 @@
+.modal_button {
+background-color: var(--button-color);
+border: none;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+margin: 0 auto;
+display: block;
+cursor: pointer;
+box-shadow: 0px 6px 10px 0px rgba(252, 132, 44, 0.33);
+transition: all 0.2s linear;
+}
+.modal_button:hover,
+.modal_button:focus {
+  background-color: var(--button-color-hover);
+}
+
+.modal_button:hover .add_icon,
+.modal_button:focus .add_icon{
+  fill:var(--button-icon-color-hover);
+}
+.add_icon{
+  fill: var(--button-icon-color);
+  vertical-align: bottom;
+}
+.modal_button:focus {
+  outline: none;
+}

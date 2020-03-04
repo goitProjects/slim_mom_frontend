@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  /* width: 300px; */
+  /* padding-top: 7px; */
+  padding-right: 5px;
+}
+
+.container a {
+  text-decoration: none;
+  text-align: end;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #212121;
+  font-family: "GothamProBold", sans-serif;
+  font-weight: bold;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .container a {
+    padding-right: 38px;
+    font-size: 15px;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container a {
+    padding-top: 7px;
+  }
+
+  .container {
+    height: 140px;
+
+  }
+}

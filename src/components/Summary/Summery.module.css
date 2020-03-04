@@ -1,0 +1,117 @@
+.summarySection {
+  /* background-color: #eff1f3; */
+  height: 100vh;
+  position: relative;
+}
+
+
+.summarySection::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #eff1f3;
+  width: 100%;
+  height: 100vh;
+}
+
+.colorOverCcal {
+  color: #a21919;
+  font-weight: bold;
+}
+
+.start {
+  color: var(--text-color-white);
+  background-color: var(--button-color);
+  line-height: 30px;
+  border-radius: 20px;
+  display: block;
+  width: 100px;
+  font-family: var(--light-fonts);
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.listSummery,
+.pSummery {
+  color: #999daa;
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+  font-size: 15px;
+  font-family: "Verdana";
+}
+
+.listSummery li {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.summarySection h3 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Verdana";
+  margin-bottom: 10px;
+}
+
+.summarySection div {
+  width: 100%;
+  padding: 25px;
+  margin: auto;
+
+}
+
+@media(min-width:768px) {
+  .summarySection {
+    /* background-color: #eff1f3; */
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100vh;
+  }
+
+  .summarySection::after{
+    background-image: url(../../assets/images/greenleaves-tablet.png), linear-gradient(#eff1f3, #eff1f3);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+  .summarySection div {
+    width: 319px;
+    padding: 30px;
+    margin: 0;
+  }
+}
+
+@media(min-width:1024px) {
+  .summarySection div {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .summarySection {
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .summarySection::after{
+    top: -141px;
+    background-image: url(../../assets//images/greenleaves.png), linear-gradient(#eff1f3, #eff1f3);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+}

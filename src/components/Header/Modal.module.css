@@ -1,0 +1,51 @@
+.container {
+  /* min-width: 320px; */
+  width: 100%;
+  height: 100vh;
+  background-color: #284160;
+  position: fixed;
+  left: 0;
+
+  z-index: 10;
+
+
+
+}
+
+.cross {
+  position: relative;
+  fill: #dddddd;
+  left: 90%;
+  top: 30px;
+}
+
+.linkBox a {
+  text-decoration: none;
+  font-family: "GothamProBold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 21px;
+  color: #9a9eaa;
+  padding-top: 70px;
+  margin: 5px;
+}
+
+.linkBox a:hover {
+  color: #fefeff;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  .container a {
+    padding-top: 10px;
+  }
+
+  .linkBox {
+    padding-top: 100px;
+  }
+}
