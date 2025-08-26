@@ -22,7 +22,7 @@
     "dotenv-expand": "4.2.0",
     "file-loader": "3.0.1",
     "fs-extra": "7.0.1",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
     "indicative": "^7.2.0",
